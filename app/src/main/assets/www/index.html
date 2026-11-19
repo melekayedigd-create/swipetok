@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#07080d">
+<title>SwipePlay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body data-tab="feed">
+<div id="splash"><div class="sp-logo"><span>▶</span></div><b>SwipePlay</b><small>swipe · play · create</small></div>
+
+<div id="app">
+  <div class="deco"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+  <header id="topbar">
+    <div class="brand"><span class="logo">▶</span><span>Swipe<b>Play</b></span></div>
+    <div id="feedTabs" class="ftabs hidden"><button data-sort="new" class="on">New</button><button data-sort="top">Top</button></div>
+    <button id="modePill" class="mode"></button>
+  </header>
+  <main>
+    <section id="v-feed" class="view on"><div id="feed"></div><div class="swipe-hint">swipe up for the next game</div></section>
+    <section id="v-lib" class="view scroll"></section>
+    <section id="v-create" class="view scroll"></section>
+    <section id="v-me" class="view scroll"></section>
+  </main>
+  <nav id="tabs">
+    <button data-tab="feed" class="on"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Feed</span></button>
+    <button data-tab="lib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.6"/></svg><span>Library</span></button>
+    <button data-tab="create" class="mid"><span class="plus"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span>Create</span></button>
+    <button data-tab="me"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>Profile</span></button>
+  </nav>
+</div>
+
+<div id="editor" class="hidden"></div>
+<div id="player" class="hidden"></div>
+<div id="sheet" class="hidden"></div>
+<div id="dialog" class="hidden"></div>
+<div id="toast"></div>
+
+<script src="js/config.js"></script>
+<script src="js/util.js"></script>
+<script src="js/runner.js"></script>
+<script src="js/aigames.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
